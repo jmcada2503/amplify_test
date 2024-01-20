@@ -40,7 +40,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios'
   ],
+
+  axios: {
+    baseURL: 'https://w048lpd0k2.execute-api.us-east-2.amazonaws.com/staging',
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

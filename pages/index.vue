@@ -78,6 +78,15 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  mounted() {
+    this.$axios.get("/api/test")
+    .then((response) => {
+      console.log("test:", response);
+    })
+    .catch((error) => {
+      console.log("error:", error);
+    });
+  }
 }
 </script>
